@@ -1,0 +1,24 @@
+[OVERVIEW]
+This file includes the dlist and definitions of the priorities for escalations.
+
+[P1 (URGENT/CRITICAL)]
+An issue that makes the service completely unavailable resulting in significant business impacts. It requires immediate attention and mitigation, and the support engineer needs to assemble the incident reponse team.
+Examples are:
+- A server is down.
+- A critical defect that makes the product unavailable in production for all or major part of the users.
+- A customer reports a critical vulnerability in the product and is able show a PoC (proof of concept) or clear evidence of exploit.
+
+[P2 (HIGH)]
+An issue that impacts major functionality of the product or a subset of users, making the service partially unavailable or results in significant degelegation in performance.
+Examples are:
+- A consistent and significant delays in API responses are observed and the problem is ongoing.
+- A defect in product impacted a specific high-value customer's use case. The customer's business is completely blocked due to the defect and there is no workaround.
+- A customer reports potential vulnerability in product, but they doesn't show a PoC or a clear evidence of exploit.
+
+[P3 (NORMAL)]
+This is the default priority.
+Examples are:
+- A defect in product which doesn't completely block the customer's business operations or the one has a workaround.
+- A customer asked the support engineer to investigate a defect or a past outage, but it is not ongoing.
+- A problem found in a non-production environment.
+- A customer asks how to implement a desired use case.

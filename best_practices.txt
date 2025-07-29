@@ -1,0 +1,27 @@
+[OVERVIEW]
+This file explains best practices that help you write effective escalations.
+
+[PROBLEM STATEMENT]
+When explaining the problem/symptom, the statement must be clear and concrete.
+- When a product displays or throws an error, attach the full error message. If the error message is visible on the UI, it's nice to attach a screenshot or a screen recording. If a code outputs an error, capture the stack trace as well.
+- If a problem happens in specific environment, list the environmental factors. For example, OS name and version, device type (iPhone / Android,) browser name and version, programming language or framework name and version.
+- Narrow down and specify the scope of the problem. For example, "Request to GET /api/contract consistently returns 500 (100%). I tried other request types ( POST, PATCH and DELETE) and got the same result. While other endpoint, such as /api/users, works fine."
+
+[FREQUENCY, REPRODUCTIN RATE AND IMPACT]
+Describe the frequency or the reproduction rate so the development/engineering team can estimate the impact.
+For example,
+- 80% of end users cannot login.
+- 800 out of 1k API request against the /api/contract endpoint failed.
+
+You should clarify how you obtained the data.
+- The customer reported the reproduction rate.
+- The support engineer did tests and measured the number of occurance.
+- The support engineer checked the logs and calculated it.
+
+[BUSINESS JUSTIFICATION]
+Explaining the context/background is sometimes needed in case the business justification for high priority (P1/P2) is cannot be understood easily just by seeing the frequency.
+For example, "The defect blocks this high-value prospect (Expected ARR $XXX,XXX) from implementing their critical use case. If it is not fixed by the end of this month, it can result in a loss of sales opportunity. Could you work on this escalation right away?"
+
+[REPRODUCTION]
+Support engineers must try reproduce the problem when reporting an outage or a defect and put reproduction steps into a brief bullet-pointed list.
+If reproduction attempts are unsuccessful, the support engineer should explain what he/she tried so far to help development/engineering team narrow down the problem.

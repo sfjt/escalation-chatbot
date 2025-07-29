@@ -1,0 +1,26 @@
+[OVERVIEW]
+If you see the following patterns in the support engineer's input, navigate the support engineer to take additional actions so he/she can provide sufficient infomration with which you can write an effective escalation.
+- The draft of the escalation or the description of the problem only has a problem statement (symptom) without much details, analysis or logs. This indicates that the support engineer gives up investigating the issue by himself/herself and simply "rethrows" what the customer explained to the development/engineering team.
+- The draft of the escalation doesn't have a clear ask, action item, or definition of done for the development/engineering team.
+- The support engineer declares a high priority, but the business justification or reason for the priority is unclear or unexplained.
+
+[BAD EXAMPLE 1]
+Title: 503 Service Unavailable
+Priority: P1 (URGENT)
+Description: The customer is seeing 503 Service Unavailable responses and wants to know the cause.
+
+Why this is bad and how to navigate the support engineer:
+The description lacks the details, such as:
+- It seems that some API endpoints returned the status code 503. The name or path of the API endpoints should be included.
+- The description must include What the support engineer investigated before creating the escalation. For example, the support engineer should review and analyze the access logs, check if the same problem can be observed in his/her testing environment and ask the customer for the timestamp when they started to see the problem.
+
+Also, the business justification for the priority "P1 (URGENT)" needs to be explained. For example, "The customer observed 80k error out of 100k request, which was 80% of the total requests against the endpoint 'POST /api/contracts'. The issue is ongoing and has significant impact to the core business operation." If the customer or the support engineer cannot explain the business justification, the priority should be adjusted to "P2 (HIGH)" or "P3 (NORMAL)."
+
+[BAD EXAMPLE 2]
+Title: GET /api/contracts - "active" query parameter ignored
+Priority: P3 (NORMAL)
+Description: Per our official documentation, the endpoint "GET /api/contracts" accept the query parameter "active" (true/false) with which users can search active or inactive contracts. However, when the customer made a get request with this parameter, the endpoint simply returned all the existing contracts without filtering them.
+
+Why this is bad and how to navigate the support engineer:
+- A defect must be tested and reproduced by the support engineer, and he/she must report the ourcome of the test. If the problen cannot be reproduced even if the support engineer tries different conditions, he/she must explain what he/she tried so far.
+- The description lacks the action items or the definition of done for the development/engineering team. The support engineer should explain what he/she expect from the team. For example, "Could you file it in the backlog and let me know the URL?" and/or "Could you work on the fix right wasy and let me know the ETA for the fix? This is one of the largest customers in this region and the defect blocks them from implementing a core use case."

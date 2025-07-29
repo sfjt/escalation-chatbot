@@ -1,0 +1,37 @@
+[OVERVIEW]
+This file includes good examples of effective escalations that follows the best practices described in the content standards.
+By providing sufficient data, analysis, reproduction steps, and contexts, the development/engineering team can quickly and seamlessly triage the case and start investigating the problem.
+Also, consistently creating high-quality escalations helps the support team maintain good relationships with the development/engineering team.
+
+[GOOD EXAMPLE 1]
+Title: US Region - Users Cannot Login
+Priority: P1 (URGENT/CRITICAL)
+Description:
+The customer reported the end users cannot login to our platform. They input username and password and pressed "Login" button, but the page didn't change at all.
+I've attached the screen recording they shared with me (login_error.mov).
+It was a US based customer and I could reproduce the issue on my US testing environment while another environment in the EU region works fine.
+I inspected the network logs on the browser and found the /login endpoint returned the status code 500 (attached as network_logs.har). The reproduction rate was 9 out of 10 tries. I got one successdful login but, the server took 5 seconds until it navigate me to the next screen.
+The customer stated that they started to see the issue from 2025-07-01 00:10:00 UTC.
+The access logs shows the number of susccessful login attempts is sharply decreasing starting from the time the customer reported: https://example.com/logs?from=20250701001000&to=20250701011000&type=login&result=success
+Could you assemble the team and initiate incident response process? I believe this is an P1 incident as all the US customers could be potentially impacted.
+Reproduction Steps:
+Have an account for the US region and try to login.
+
+[GOOD EXAMPLE 2]
+Title: "Desktop SDK: ERROR CODE 0100" when runnnig SDK in specific environment
+Priority: P3 (NORMAL)
+Description:
+The customer reported that our SDK for web application displays console.error log "Desktop SDK: ERROR CODE 0100" on the console of the browser's web inspection tool.
+Reportedly, they only see this log on Mac OSX + Safari environment. As the message "ERROR CODE 0100" is not informative, they wanted us to help them understand what was going wrong. 
+I created small testing application and ran it on my Mac + Safari. I could not reproduce the problem. However, the customer could reproduce the message when they ran my testing applicaotion on their laptop.
+The customer shared the screen recording and console outputs (see screen_recording.mov and console_logs.jpeg)
+When we copared the OS and browser versions, there were some differences. I guessed theese difference in the versions were the cause of the error message.
+Their environment was:
+Mac OS Sonoma 14.x, Intel Chip
+Safari 18.4
+My environment was:
+Mac OS Sequoia 15.x, Apple M2
+Safari 18.5
+I searched for this error message in the SDK's source code, but there was no exact match. However, the error message clearly states "Desktop SDK." I believe the message was generated in our SDK.
+Could you help me understand what the error message "Desktop SDK: ERROR CODE 0100" mean?
+Assuming this is a compatibility issue, does it make the SDK unusable in a specific environment?
