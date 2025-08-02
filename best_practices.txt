@@ -1,27 +1,103 @@
-[OVERVIEW]
-This file explains best practices that help you write effective escalations.
+# Escalation Best Practices
 
-[PROBLEM STATEMENT]
+## Overview
+
+This file explains best practices that help you write effective escalations. These practices are based on industry standards, incident management frameworks, and proven methodologies for technical support escalation processes.
+
+## Problem Statement
 When explaining the problem/symptom, the statement must be clear and concrete.
 - When a product displays or throws an error, attach the full error message. If the error message is visible on the UI, it's nice to attach a screenshot or a screen recording. If a code outputs an error, capture the stack trace as well.
 - If a problem happens in specific environment, list the environmental factors. For example, OS name and version, device type (iPhone / Android,) browser name and version, programming language or framework name and version.
 - Narrow down and specify the scope of the problem. For example, "Request to GET /api/contract consistently returns 500 (100%). I tried other request types ( POST, PATCH and DELETE) and got the same result. While other endpoint, such as /api/users, works fine."
 
-[FREQUENCY, REPRODUCTIN RATE AND IMPACT]
-Describe the frequency or the reproduction rate so the development/engineering team can estimate the impact.
+## Frequency, Reproduction Rate and Impact
+Describe the frequency or reproduction rate so the development/engineering team can estimate the impact.
 For example,
 - 80% of end users cannot login.
 - 800 out of 1k API request against the /api/contract endpoint failed.
 
 You should clarify how you obtained the data.
 - The customer reported the reproduction rate.
-- The support engineer did tests and measured the number of occurance.
+- The support engineer did tests and measured the number of occurrences.
 - The support engineer checked the logs and calculated it.
 
-[BUSINESS JUSTIFICATION]
-Explaining the context/background is sometimes needed in case the business justification for high priority (P1/P2) is cannot be understood easily just by seeing the frequency.
-For example, "The defect blocks this high-value prospect (Expected ARR $XXX,XXX) from implementing their critical use case. If it is not fixed by the end of this month, it can result in a loss of sales opportunity. Could you work on this escalation right away?"
+## Business Justification and Priority Rationale
+Explaining the context/background is essential when the business justification for high priority (P1/P2) cannot be understood easily just by seeing the frequency.
+- Provide specific business context for priority decisions
+- Include customer tier, contract value, or strategic importance
+- Mention SLA obligations or contractual commitments
+- Explain cascading business impacts or dependencies
+- Examples:
+  * "The defect blocks this high-value prospect (Expected ARR $XXX,XXX) from implementing their critical use case. If not fixed by month-end, we risk losing the deal."
+  * "This affects our largest enterprise customer (40% of revenue) during their peak business season."
+  * "Issue violates our 99.9% uptime SLA commitment, triggering financial penalties."
+  * "Blocks the customer's compliance audit scheduled for next week - regulatory implications."
 
-[REPRODUCTION]
-Support engineers must try reproduce the problem when reporting an outage or a defect and put reproduction steps into a brief bullet-pointed list.
-If reproduction attempts are unsuccessful, the support engineer should explain what he/she tried so far to help development/engineering team narrow down the problem.
+## Reproduction
+Support engineers must try to reproduce the problem when reporting an outage or defect and put reproduction steps into a brief bullet-pointed list.
+If reproduction attempts are unsuccessful, the support engineer should explain what they tried so far to help the development/engineering team narrow down the problem.
+
+## Clear Action Items and Definition of Done
+Every escalation must include specific, actionable requests and clear expectations for the development/engineering team.
+- Define exactly what you need from the team (investigation, fix, workaround, documentation update, etc.)
+- Specify expected timelines or urgency level with business justification
+- Include success criteria or definition of done
+- Examples:
+  * "Could you investigate the root cause and provide a timeline for the fix? The customer needs an ETA by Friday."
+  * "Please create a workaround or hotfix for this P1 issue affecting 80% of users in production."
+  * "Could you file this in the backlog with P3 priority and share the ticket URL for customer follow-up?"
+
+## Timeline and Urgency Context
+Provide clear timeline information to help the development team prioritize appropriately.
+- Include when the issue started (timestamp in UTC when possible)
+- Specify if the issue is ongoing, intermittent, or resolved but needs investigation
+- Mention any customer-imposed deadlines or business-critical dates
+- Indicate if this is blocking other work or causing cascading effects
+- Example: "Issue started at 2025-01-15 14:30 UTC and is ongoing. Customer has a demo scheduled for Friday that this issue will block."
+
+## Attachments and Evidence
+Provide comprehensive supporting materials to enable efficient investigation.
+- Screenshots or screen recordings of the issue
+- Complete error messages and stack traces (not truncated)
+- Network logs (HAR files for web issues)
+- System logs or application logs covering the time period
+- Customer-provided evidence (emails, recordings, documents)
+- Test results and reproduction attempt outputs
+- Environment comparisons (working vs. broken)
+
+## Escalation Tracking and Follow-up
+Maintain clear tracking and communication throughout the escalation lifecycle.
+- Reference any related tickets, previous escalations, or known issues
+- Include customer communication preferences and contact information
+- Specify who should be notified of updates (customer success, account manager, etc.)
+- Mention if this is part of a larger pattern or trend
+- Track escalation in your ticketing system with appropriate tags/labels
+
+## Environmental and Contextual Details
+Provide comprehensive environmental information that may impact the issue.
+- User account details (role, permissions, subscription tier)
+- Geographic location or data center region
+- API keys, client IDs, or identifiers (sanitized appropriately)
+- Integration details (third-party services, webhook configurations)
+- Recent changes (deployments, configuration updates, user actions)
+- Load conditions (traffic volume, concurrent users)
+- Example: "Issue occurs only for Enterprise tier customers in the EU region using API version 2.1 with webhook integrations enabled."
+
+## Customer Impact Assessment
+Quantify and qualify the business impact beyond just technical metrics.
+- Number of affected users (percentage of total user base)
+- Revenue impact (lost transactions, subscription cancellations)
+- Operational impact (blocked workflows, manual workarounds required)
+- Reputation impact (public-facing issues, SLA breaches)
+- Competitive impact (feature gaps, customer churn risk)
+- Example: "Affects 500 users (12% of active user base) across 3 major enterprise accounts, resulting in estimated $50K revenue at risk."
+
+## Investigation Work Performed
+Document all investigation and troubleshooting attempts to avoid duplication.
+- List all troubleshooting steps already attempted
+- Include negative test results (what was ruled out)
+- Mention any workarounds tested (successful or unsuccessful)
+- Reference documentation or knowledge base articles consulted
+- Include any insights from similar previous issues
+- Note collaboration with other teams (if any)
+- Example: "Tested in multiple browsers (Chrome 120, Firefox 121, Safari 17) - issue persists. Cleared cache/cookies, disabled extensions - no improvement. Checked similar ticket #12345 from last month - different root cause."
