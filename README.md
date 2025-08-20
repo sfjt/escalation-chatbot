@@ -1,16 +1,18 @@
 # Escalation Chatbot Prompts
 
-A comprehensive set of prompts and knowledge files designed to help technical support engineers write effective escalation tickets that get faster resolution from development and engineering teams.
+Escalation Chatbot Prompts
+A comprehensive set of prompts and knowledge files designed to help technical support engineers write effective escalation tickets that get **faster resolution** from development and engineering teams.
 
 ## 🎯 Purpose
 
-This chatbot system **empowers support engineers** to create high-quality escalations by:
+This chatbot system is a learning tool for support engineers to master the art of writing high-quality escalations. By using these prompts, you will learn to:
 
-- **Providing structured guidance** through investigation and documentation best practices
-- **Teaching effective communication** with development teams
-- **Ensuring complete information** to accelerate engineering response times
-- **Preventing common pitfalls** like XY problems and unclear priorities
-- **Building escalation skills** through examples and feedback
+- **Follow best practices** for investigating and documenting issues, which leads to clearer tickets.
+- **Communicate effectively** with engineering teams, ensuring your message is understood the first time.
+- **Prevent common pitfalls**, like unclear priorities and the XY problem.
+- **Ensure all necessary information is included**, which eliminates back-and-forth and leads to quicker response times and **faster case resolution**.
+
+**Note:** The instructions are intentionally designed to be restrictive for educational purposes so the user can learn best practices through chatting.
 
 ## 📁 File Structure
 
