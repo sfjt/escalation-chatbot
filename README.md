@@ -4,10 +4,10 @@ A comprehensive set of prompts and knowledge files designed to help technical su
 
 ## Initial Setup
 
-1. **Update company context** in `instructions.txt`: Replace `**Company name:** N/A` with your actual company or product name (e.g., `**Company name:** Acme Corporation`). This enables the AI agent to reference your official documentation when encountering unfamiliar product features.
+1. Update company context in `instructions.txt`: Replace `**Company name:** N/A` with your actual company or product name (e.g., `**Company name:** Acme Corporation`). This enables the AI agent to reference your official documentation when encountering unfamiliar product features.
 2. Deploy the set of prompts as a [Gem](https://support.google.com/gemini/answer/15236405) or a [GPT](https://openai.com/index/introducing-gpts/).
 
-## 🎯 Purpose
+## Purpose
 
 This chatbot system is a learning tool for support engineers to master the art of writing high-quality escalations. By using these prompts, you will learn to:
 
@@ -18,7 +18,7 @@ This chatbot system is a learning tool for support engineers to master the art o
 
 **Note:** The instructions are intentionally designed to be restrictive for educational purposes so the user can learn best practices through chatting.
 
-## 📁 File Structure
+## File Structure
 
 ### Core Files
 
@@ -30,7 +30,7 @@ This chatbot system is a learning tool for support engineers to master the art o
 | `good_examples.txt` | Effective escalation examples to model |
 | `bad_examples.txt` | Learning examples with improvement guidance |
 
-## 🚀 Key Features
+## Key Features
 
 ### 1. **Investigation Checklist**
 Structured approach to gather complete information before escalating:
@@ -64,7 +64,7 @@ Detailed best practices covering:
 - Customer impact assessment
 - Investigation documentation
 
-## 📊 Benefits
+## Benefits
 
 **For Support Engineers:**
 - **Faster resolution times** through complete, well-structured escalations
@@ -84,7 +84,7 @@ Detailed best practices covering:
 - **Improved team collaboration**
 - **Knowledge sharing** and skill development
 
-## 🔄 Continuous Improvement
+## Continuous Improvement
 
 ### Customization Ideas
 - **Add product-specific examples** relevant to your service
