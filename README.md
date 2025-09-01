@@ -3,6 +3,11 @@
 Escalation Chatbot Prompts
 A comprehensive set of prompts and knowledge files designed to help technical support engineers write effective escalation tickets that get **faster resolution** from development and engineering teams.
 
+## Initial Setup
+
+1. **Update company context** in `instructions.txt`: Replace `**Company name:** N/A` with your actual company or product name (e.g., `**Company name:** Acme Corporation`). This enables the AI agent to reference your official documentation when encountering unfamiliar product features.
+2. Deploy the set of prompts as a a [Gem](https://support.google.com/gemini/answer/15236405) or a [GPT](https://openai.com/index/introducing-gpts/).
+
 ## 🎯 Purpose
 
 This chatbot system is a learning tool for support engineers to master the art of writing high-quality escalations. By using these prompts, you will learn to:
@@ -60,27 +65,6 @@ Detailed best practices covering:
 - Customer impact assessment
 - Investigation documentation
 
-## 🛠️ Usage
-
-### For Support Teams
-1. Deploy these prompts to your AI chatbot system (Gemini, Claude, ChatGPT, etc.)
-2. Use as a training resource for escalation best practices
-3. Reference during escalation reviews and coaching sessions
-4. Customize examples for your specific product/service
-
-### For Support Engineers
-1. **Follow the investigation checklist** to gather complete information
-2. **Ask about business objectives** to understand true customer needs
-3. **Use the priority framework** for consistent priority assignment
-4. **Model good examples** for structure and communication style
-5. **Learn from examples** to continuously improve escalation quality
-
-### For AI Implementation
-Configure your AI system with:
-- **Main prompt**: `instructions.txt`
-- **Knowledge base**: All `.txt` files as reference material
-- **Company context**: Update company name in instructions as needed
-
 ## 📊 Benefits
 
 **For Support Engineers:**
@@ -115,17 +99,6 @@ This system grows with your team:
 - **Share successful escalation examples** 
 - **Refine guidance** based on engineering feedback
 - **Update for new tools** and processes
-
-## 🤝 Getting Started
-
-### Initial Setup
-1. **Update company context** in `instructions.txt`: Replace `**Company name:** N/A` with your actual company or product name (e.g., `**Company name:** Acme Corporation`). This enables the AI to reference your official documentation when encountering unfamiliar product features.
-
-### Using the System
-2. **Review the examples** in `good_examples.txt` to understand effective escalation structure
-3. **Practice with the checklist** on your next few escalations  
-4. **Use the priority framework** to build confidence in priority decisions
-5. **Share feedback** on what works well and what could be improved
 
 ---
 
