@@ -1,13 +1,11 @@
 # Escalation Chatbot Prompts
 
-Escalation Chatbot Prompts
-
 A comprehensive set of prompts and knowledge files designed to help technical support engineers write effective escalation tickets that get **faster resolution** from development and engineering teams.
 
 ## Initial Setup
 
 1. **Update company context** in `instructions.txt`: Replace `**Company name:** N/A` with your actual company or product name (e.g., `**Company name:** Acme Corporation`). This enables the AI agent to reference your official documentation when encountering unfamiliar product features.
-2. Deploy the set of prompts as a a [Gem](https://support.google.com/gemini/answer/15236405) or a [GPT](https://openai.com/index/introducing-gpts/).
+2. Deploy the set of prompts as a [Gem](https://support.google.com/gemini/answer/15236405) or a [GPT](https://openai.com/index/introducing-gpts/).
 
 ## 🎯 Purpose
 
