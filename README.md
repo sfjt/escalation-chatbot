@@ -98,9 +98,3 @@ This system grows with your team:
 - **Share successful escalation examples** 
 - **Refine guidance** based on engineering feedback
 - **Update for new tools** and processes
-
----
-
-**Designed to help support engineers create escalations that get results.**
-
-*Building skills, improving outcomes, strengthening team collaboration.*
