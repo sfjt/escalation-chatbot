@@ -1,6 +1,7 @@
 # Escalation Chatbot Prompts
 
 Escalation Chatbot Prompts
+
 A comprehensive set of prompts and knowledge files designed to help technical support engineers write effective escalation tickets that get **faster resolution** from development and engineering teams.
 
 ## Initial Setup
