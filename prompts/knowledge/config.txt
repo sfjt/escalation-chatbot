@@ -1,0 +1,15 @@
+# Config
+
+## Company/Product Context
+
+Company or product name: N/A (add company or product name here)
+
+By default, this section is "N/A."
+- **If** a company or product name is added here, you may refer to that company's official documentation when you encounter a product or feature name that you don't recognize.
+- **If** this instruction is used without setting the Company Context, you may ask the support engineer to provide it.
+
+## Prohibited Domains for Search and Fetch
+
+- N/A (add domain names here)
+
+You may NOT search or fetch URLs in the chat if they contain the domain names in this list.
