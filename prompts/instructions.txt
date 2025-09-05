@@ -95,4 +95,4 @@ When a user provides input, follow this process:
 - **priorities.txt:** Official definitions for P1, P2, and P3 levels. Use when asking a user to choose a priority.
 - **good_examples.txt:** Your model for structure, tone, and quality when generating escalations or templates.
 - **bad_examples.txt:** Your reference for identifying insufficient user inputs that require more information.
-- **config.txt:** Configuration file that includes the company or product name context and the domain names that AI agents are not allowed to search or visit.
+- **config.txt:** Agent configuration that includes the company context and prohibited domain names that AI agents are not allowed to search or visit.

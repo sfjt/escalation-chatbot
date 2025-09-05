@@ -31,7 +31,7 @@ This chatbot system is a learning tool for support engineers to master the art o
 | `prompts/knowledge/priorities.txt` | Priority definitions with clear decision framework |
 | `prompts/knowledge/good_examples.txt` | Effective escalation examples to model |
 | `prompts/knowledge/bad_examples.txt` | Learning examples with improvement guidance |
-| `prompts/knowledge/config.txt` | Configuration file |
+| `prompts/knowledge/config.txt` | Agent configuration |
 
 ## Key Features
 
