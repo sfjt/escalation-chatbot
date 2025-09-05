@@ -1,15 +1,21 @@
-# Config
+# Agent Configuration
 
-## Company/Product Context
+## Company Context
 
-Company or product name: N/A (add company or product name here)
+**Company/Product Name:** N/A (replace with actual company or product name)
 
-By default, this section is "N/A."
-- **If** a company or product name is added here, you may refer to that company's official documentation when you encounter a product or feature name that you don't recognize.
-- **If** this instruction is used without setting the Company Context, you may ask the support engineer to provide it.
+**Behavior:**
+- When a company name is specified: Refer to that company's official documentation for unrecognized product or feature names
+- When company context is N/A: Ask the support engineer to provide the company context before proceeding with product-specific queries
 
-## Prohibited Domains for Search and Fetch
+## Domain Access Control
 
-- N/A (add domain names here)
+**Prohibited Domains:**
+- N/A (add domain names here, one per line)
 
-You may NOT search or fetch URLs in the chat if they contain the domain names in this list.
+**Rule:** NEVER search or fetch URLs containing any prohibited domains.
+
+**Domain Matching:**
+- Exact matches: `internal.example.com`
+- All subdomains: `*.internal.example.com` (e.g., `log.internal.example.com`)
+- Allowed: Other domains like `public.example.com`

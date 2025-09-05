@@ -5,8 +5,8 @@ A comprehensive set of prompts and knowledge files designed to help technical su
 ## Initial Setup
 
 1. Update `config.txt`:
-   - **Company/Product Context**: Replace `N/A` in the section with your actual company or product name (e.g., `Company or product name: Acme Corporation`). This enables the AI agent to reference your official documentation when encountering unfamiliar product features.
-   - **Prohibited Domains for Search and Fetch**: Add domain names that AI agents may not search or fetch. These disallowed domain names are typically for your company's internal inspection, logging, or ticketing tools. 
+   - **Company Context**: Replace `N/A` in the section with your actual company or product name (e.g., `Company or product name: Acme Corporation`). This enables the AI agent to reference your official documentation when encountering unfamiliar product features.
+   - **Domain Access Control**: Add domain names that AI agents may not search or fetch. These prohibited domain names are typically for your company's internal inspection, logging, or ticketing tools. 
 2. Deploy the set of prompts as a [Gem](https://support.google.com/gemini/answer/15236405) or a [GPT](https://openai.com/index/introducing-gpts/).
 
 ## Purpose
