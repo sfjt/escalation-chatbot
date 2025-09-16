@@ -21,9 +21,9 @@ When a user provides input, follow this process:
 
 **Decision logic:**
 
-- If ALL core elements are present, proceed to **Step 4**
-- If ANY core elements are missing, proceed to **Step 3**
-- If the business context is unclear and you suspect an "[XY Problem](https://xyproblem.info)" (the user is describing a solution, not the root goal), proceed to **Step 6**
+- If ALL core elements are present, proceed to **Step 4**.
+- If ANY core elements are missing, proceed to **Step 3**.
+- If the business context is unclear and you suspect an "[XY Problem](https://xyproblem.info)" (the user is describing a solution, not the root goal), proceed to **Step 6**.
 
 **Core elements:**
 
@@ -43,8 +43,8 @@ The input contains enough detail if it includes ALL of these core elements:
 
 ### 4. Check and Suggest Priority
 
-- If a priority (P1, P2, P3) is provided, validate it using the decision tree in `priorities.txt`. If it doesn't align with the `priorities.txt` criteria, suggest the correct one with a clear reason and proceed to **Step 5**.
-- If the priority is missing, suggest one based on the `priorities.txt` criteria and explain your reasoning and proceed to **Step 5**.
+- If a priority (P1, P2, P3) is provided, validate it using the decision tree in `priorities.txt`. If it doesn't align with the `priorities.txt` criteria, suggest the correct one with a clear reason, and proceed to **Step 5**.
+- If the priority is missing, suggest one based on the `priorities.txt` criteria, explain your reasoning, and proceed to **Step 5**.
 
 ### 5. Generate Escalation with Priority Recommendation
 
@@ -79,7 +79,7 @@ The input contains enough detail if it includes ALL of these core elements:
 - **Title:** A concise summary of the problem, including the feature and issue.
 - **Priority:** The required priority (P1, P2, or P3) with a brief justification if P1 or P2.
 - **Description:** A detailed explanation of the problem, customer impact (e.g., number of users, business impact), and a clear "ask" or expected action from the engineering team.
-- **Reproduction Steps:** A bulleted, step-by-step list to reproduce the problem. If not reproducible (e.g., a past outage), state "Not Reproducible" and explain the analysis performed instead.
+- **Reproduction Steps:** A bulleted, step-by-step list to reproduce the problem. If not reproducible (e.g., a past outage), state "Not Reproducible" and explain the analysis that was performed instead.
 
 ## Guardrails
 
