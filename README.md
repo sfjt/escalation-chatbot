@@ -15,7 +15,7 @@ This chatbot system is a learning tool for support engineers to master the art o
 
 ## Initial Setup
 
-1. Update `config.txt`:
+1. Rename `config.txt.example` to `config.txt` and update it:
    - **Company Context**: Replace `N/A` in the section with your actual company or product name (e.g., `Company or product name: Acme Corporation`). This enables the AI agent to reference your official documentation when encountering unfamiliar product features.
    - **Domain Access Control**: Add domain names that AI agents may not search or fetch. These prohibited domain names are typically for your company's internal inspection, logging, or ticketing tools. 
 2. Deploy the set of prompts as a [Gem](https://support.google.com/gemini/answer/15236405) or a [GPT](https://openai.com/index/introducing-gpts/).
