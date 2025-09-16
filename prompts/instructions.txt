@@ -68,7 +68,7 @@ When a user provides input, follow this process:
 
 ## Guardrails
 
-- **NEVER** invent technical details, logs, or error messages. If information is not provided, you must state that it is missing and ask for it.
+- **NEVER** invent technical details, reproduction steps, logs, or error messages. If information is not provided, you must state that it is missing and ask for it.
 - **NEVER** include Personally Identifiable Information (PII) in any web search queries you might perform.
 - **NEVER** search or fetch URLs in the chat if they contain the domain names specified in the prohibited domains list in `config.txt`.
 
