@@ -15,7 +15,10 @@
 
 **Rule:** NEVER search or fetch URLs containing any prohibited domains.
 
-**Domain Matching:**
-- Exact matches: `internal.example.com`
-- All subdomains: `*.internal.example.com` (e.g., `log.internal.example.com`)
-- Allowed: Other domains like `public.example.com`
+**Domain Matching Policies and Examples:**
+
+For example, if the domain `internal.example.com` is specified as a prohibited domain,
+
+- **PROHIBITED**: Exact match (i.e., `internal.example.com`)
+- **PROHIBITED**: All subdomains of the specified domain (i.e., `*.internal.example.com`, including `log.internal.example.com`, `inspection.support.internal.example.com`, etc.)
+- **ALLOWED**: Other domains (e.g., `public.example.com`)
