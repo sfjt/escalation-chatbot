@@ -28,6 +28,7 @@ You should clarify how you obtained the data.
 ## Business Justification and Priority Rationale
 
 Explaining the context/background is essential when the business justification for high priority (P1/P2) cannot be understood easily just by seeing the frequency.
+
 - Provide specific business context for priority decisions
 - Include customer tier, contract value, or strategic importance
 - Mention SLA obligations or contractual commitments
@@ -47,6 +48,7 @@ If reproduction attempts are unsuccessful, the support engineer should explain w
 ## Clear Action Items and Definition of Done
 
 Every escalation must include specific, actionable requests and clear expectations for the development/engineering team.
+
 - Define exactly what you need from the team (investigation, fix, workaround, documentation update, etc.)
 - Specify expected timelines or urgency level with business justification
 - Include success criteria or definition of done
@@ -58,6 +60,7 @@ Every escalation must include specific, actionable requests and clear expectatio
 ## Timeline and Urgency Context
 
 Provide clear timeline information to help the development team prioritize appropriately.
+
 - Include when the issue started (timestamp in UTC when possible)
 - Specify if the issue is ongoing, intermittent, or resolved but needs investigation
 - Mention any customer-imposed deadlines or business-critical dates
@@ -67,6 +70,7 @@ Provide clear timeline information to help the development team prioritize appro
 ## Attachments and Evidence
 
 Provide comprehensive supporting materials to enable efficient investigation.
+
 - Screenshots or screen recordings of the issue
 - Complete error messages and stack traces (not truncated)
 - Network logs (HAR files for web issues)
@@ -78,6 +82,7 @@ Provide comprehensive supporting materials to enable efficient investigation.
 ## Escalation Tracking and Follow-up
 
 Maintain clear tracking and communication throughout the escalation lifecycle.
+
 - Reference any related tickets, previous escalations, or known issues
 - Include customer communication preferences and contact information
 - Specify who should be notified of updates (customer success, account manager, etc.)
@@ -87,6 +92,7 @@ Maintain clear tracking and communication throughout the escalation lifecycle.
 ## Environmental and Contextual Details
 
 Provide comprehensive environmental information that may impact the issue.
+
 - User account details (role, permissions, subscription tier)
 - Geographic location or data center region
 - API keys, client IDs, or identifiers (sanitized appropriately)
@@ -98,6 +104,7 @@ Provide comprehensive environmental information that may impact the issue.
 ## Customer Impact Assessment
 
 Quantify and qualify the business impact beyond just technical metrics.
+
 - Number of affected users (percentage of total user base)
 - Revenue impact (lost transactions, subscription cancellations)
 - Operational impact (blocked workflows, manual workarounds required)
@@ -108,6 +115,7 @@ Quantify and qualify the business impact beyond just technical metrics.
 ## Investigation Work Performed
 
 Document all investigation and troubleshooting attempts to avoid duplication.
+
 - List all troubleshooting steps already attempted
 - Include negative test results (what was ruled out)
 - Mention any workarounds tested (successful or unsuccessful)
@@ -119,6 +127,7 @@ Document all investigation and troubleshooting attempts to avoid duplication.
 ## Scope of Responsibility
 
 Before escalating an issue that involves third-party components, the support engineer must first isolate the problem and provide evidence that the cause is within first-party product.
+
 - Isolate the Root Cause: Distinguish whether the issue originates from the your (first-patry) platform or from an external integration, such as a third-party API, a customer's custom code, or a cloud provider's service.
 - Provide First-Party Evidence: Your investigation must include evidence that points to a failure within your system. For example, provide logs showing that your service failed before calling an external API, or demonstrate that your product mishandled a valid response from a third-party service.
 - Justify Exceptions: In rare cases, you may need to escalate an issue that appears to be caused by a major third-party platform (e.g., a critical feature breaking on the latest version of a popular web browser). In such cases, you must include a clear justification explaining why our engineering team needs to investigate or create a workaround.

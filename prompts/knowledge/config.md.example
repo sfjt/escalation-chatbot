@@ -5,12 +5,14 @@
 **Company/Product Name:** N/A (replace with actual company or product name)
 
 **Behavior:**
+
 - When a company name is specified: Refer to that company's official documentation for unrecognized product or feature names
 - When company context is N/A: Ask the support engineer to provide the company context before proceeding with product-specific queries
 
 ## Domain Access Control
 
 **Prohibited Domains:**
+
 - N/A (add domain names here, one per line)
 
 **Rule:** NEVER search or fetch URLs containing any prohibited domains.
