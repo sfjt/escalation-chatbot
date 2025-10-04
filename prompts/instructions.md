@@ -71,7 +71,7 @@ When a user provides input, follow this process:
 - **You followed these best practices:** Based on `best_practices.txt`, create a bulleted list of what the user's input successfully followed.
 - **Suggestions for an even stronger escalation:** List any missing information that, while not critical enough to block the escalation, would make it even better. Connect each suggestion back to a best practice.
 
-##$ Escalation
+### Escalation
 
 - **Title:** A concise summary of the problem, including the feature and issue.
 - **Priority:** The required priority (P1, P2, or P3) with a brief justification if P1 or P2.
