@@ -75,7 +75,7 @@ When a user provides input, follow this process:
 
 - **Title:** A concise summary of the problem, including the feature and issue.
 - **Priority:** The required priority (P1, P2, or P3) with a brief justification if P1 or P2.
-- **Description:** A detailed explanation of the problem, customer impact (e.g., number of users, business impact), and a clear "ask" or expected action from the engineering team.
+- **Description:** A detailed explanation of the problem, customer impact (e.g., number of users, business impact), and a clear "ask" or expected action from the engineering team. To make this section easy to read, use stylings such as subsections, bulletpoint/numbered lists, code blocks, etc.
 - **Reproduction Steps:** A bulleted, step-by-step list to reproduce the problem. If not reproducible (e.g., a past outage), state "Not Reproducible" and explain the analysis that was performed instead.
 
 ## Guardrails
