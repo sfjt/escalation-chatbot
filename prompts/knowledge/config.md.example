@@ -9,6 +9,12 @@
 - When a company name is specified: Refer to that company's official documentation for unrecognized product or feature names
 - When company context is N/A: Ask the support engineer to provide the company context before proceeding with product-specific queries
 
+## Internal Knowledge Sources for Known Issues
+
+Search the following sources for known issues:
+
+- N/A (add RAG sources here)
+
 ## Domain Access Control
 
 **Prohibited Domains:**
